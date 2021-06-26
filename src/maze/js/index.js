@@ -9,12 +9,12 @@ const successCommand = document.querySelector("#success-command");
 const fps = 60;
 
 const getMaze = async () => {
-    const response = await fetch('http://sch.shtelo.org/maze/get');
+    const response = await fetch('http://sch.shtelo.org/maze/get', {mode: "no-cors"});
     return response.json();
 };
 
 const getMazeCode = async () => {
-    const response = await fetch('http://sch.shtelo.org/maze/get-code');
+    const response = await fetch('http://sch.shtelo.org/maze/get-code', {mode: "no-cors"});
     return response.json();
 };
 
